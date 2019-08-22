@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     double totalBill;
+    int desktop;
 
     public void billandtip(View v){
         SeekBar seekBar = findViewById(R.id.seekBar);
-        seekBar.setOnSeekBarChangeListener(seekBarChangeListener);
         EditText billEdit = (EditText) findViewById(R.id.billEdit);
         EditText qualityEdit = (EditText) findViewById(R.id.qualityEdit);
         TextView tipFind = (TextView) findViewById(R.id.tipFind);
