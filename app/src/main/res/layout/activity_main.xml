@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/billEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Bill Cost"
+         />
+
+    <EditText
+        android:id="@+id/qualityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Quality of Service (Percentage)" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:max="100"/>
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="billandtip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready for tip and bill?"
+        android:textColor="@color/myFavColor"
+        android:textColorHint="#0E33FF" />
+
+    <TextView
+        android:id="@+id/tipFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your tip?"
+        android:textColor="#09FFE6"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/billFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your bill?"
+        android:textColor="#09FFE6"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/donation"
+        android:onClick="donation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here if you would like to donate $5 to a local charity?"
+        android:textColor="@color/myFavColor"
+        android:textColorHint="#0E33FF" />
+
+    <TextView
+        android:id="@+id/billDonation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please consider donating"
+        android:textColor="#09FFE6"
+        android:textSize="24sp" />
+
+</LinearLayout>
