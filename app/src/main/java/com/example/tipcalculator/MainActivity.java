@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     double totalBill;
-    int desktopperuhuigiug;
 
     public void billandtip(View v){
         SeekBar seekBar = findViewById(R.id.seekBar);
